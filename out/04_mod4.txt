@@ -1,0 +1,5 @@
+3 # r0 = 3
+129 # r1 = r0
+178 # r2 = input
+67 # r3 = r1 AND r2
+158 # output = r3

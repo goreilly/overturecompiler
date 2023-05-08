@@ -1,0 +1,21 @@
+const WALL 1
+label start
+1 # r0 = ROBOT_FORWARD
+134 # output = r0
+0 # r0 = ROBOT_TURN_LEFT
+134 # output = r0
+label wall_check
+1 # r0 = WALL
+129 # r1 = r0
+178 # r2 = input
+69 # r3 = r1 - r2
+start # r0 = start
+197 # jneq0
+2 # r0 = ROBOT_TURN_RIGHT
+134 # output = r0
+4 # r0 = ROBOT_USE
+134 # output = r0
+wall_check # r0 = wall_check
+196 # jmp
+start # r0 = start
+196 # jmp

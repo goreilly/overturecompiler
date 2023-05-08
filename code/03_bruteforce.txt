@@ -1,0 +1,28 @@
+
+
+# start at halfway number
+# n = halfway
+# output = n
+# input is 1 if high, 0 if low
+
+
+
+# n = 0
+
+# r1 = 0
+r0 = 0
+r1 = r0
+
+# test 0
+output = r0
+
+# r2 = 1
+r0 = 1
+r2 = r0
+
+label increment
+r3 = r1 + r2
+output = r3
+r1 = r3
+r0 = increment
+jmp

@@ -1,0 +1,7 @@
+Add binary mode
+Output literal constant values
+Calculate and output label offset values
+Clean up code
+
+Add more features that output multiple lines of code
+Create more complicated jump logic

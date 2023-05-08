@@ -1,0 +1,10 @@
+# take 2 lower bits
+# AND 3
+
+r0 = 3
+r1 = r0
+
+r2 = input
+r3 = r1 AND r2
+
+output = r3

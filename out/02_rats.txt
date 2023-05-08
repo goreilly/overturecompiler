@@ -1,0 +1,25 @@
+const SPACE_RAT 33
+5 # r0 = ROBOT_SHOOT
+134 # output = r0
+1 # r0 = ROBOT_FORWARD
+134 # output = r0
+134 # output = r0
+134 # output = r0
+134 # output = r0
+134 # output = r0
+label check_vision
+177 # r1 = input
+33 # r0 = SPACE_RAT
+130 # r2 = r0
+69 # r3 = r1 - r2
+5 # r0 = ROBOT_SHOOT
+193 # je0 # jump to value in r0 if r3 = 0
+3 # r0 = ROBOT_WAIT
+134 # output = r0
+check_vision # r0 = check_vision
+196 # jmp
+label shoot
+5 # r0 = ROBOT_SHOOT
+134 # output = r0
+check_vision # r0 = check_vision
+196 # jmp # jump to value in r0

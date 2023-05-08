@@ -1,0 +1,37 @@
+
+const WALL 1
+
+label start
+# step forward
+r0 = ROBOT_FORWARD
+output = r0
+
+# turn left
+r0 = ROBOT_TURN_LEFT
+output = r0
+
+label wall_check
+# if wall
+r0 = WALL
+r1 = r0
+r2 = input
+r3 = r1 - r2
+
+# if there is not a wall restart
+r0 = start
+jneq0
+
+# turn right
+r0 = ROBOT_TURN_RIGHT
+output = r0
+# press use
+r0 = ROBOT_USE
+output = r0
+
+# jump to wall_check if still wall
+r0 = wall_check
+jmp
+
+# jump to start
+r0 = start
+jmp

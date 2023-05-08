@@ -1,0 +1,11 @@
+0 # r0 = 0
+129 # r1 = r0
+134 # output = r0
+1 # r0 = 1
+130 # r2 = r0
+label increment
+68 # r3 = r1 + r2
+158 # output = r3
+153 # r1 = r3
+increment # r0 = increment
+196 # jmp

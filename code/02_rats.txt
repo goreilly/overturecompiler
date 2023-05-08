@@ -1,0 +1,38 @@
+const SPACE_RAT 33
+
+# shoot
+r0 = ROBOT_SHOOT
+output = r0
+
+# move forward 5
+r0 = ROBOT_FORWARD
+output = r0
+output = r0
+output = r0
+output = r0
+output = r0
+
+# check vision
+label check_vision
+r1 = input
+r0 = SPACE_RAT
+r2 = r0
+r3 = r1 - r2
+
+r0 = ROBOT_SHOOT
+je0 # jump to value in r0 if r3 = 0
+# else wait
+
+r0 = ROBOT_WAIT
+output = r0
+
+r0 = check_vision
+jmp
+
+# if invader, shoot
+
+label shoot
+r0 = ROBOT_SHOOT
+output = r0
+r0 = check_vision
+jmp # jump to value in r0
